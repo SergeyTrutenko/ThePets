@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThePets</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
+    <link rel="stylesheet" href="libs/range-slider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+    <div class="container d-flex">
+        <a href="#" class="menu_link d-flex">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <span>Menu</span>
+        </a>
+        <a id="main_logo" href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="main-menu">
+            <div class="search-block">
+                <form class="form-group">
+                    <label class="input-wrapper">
+                        <input type="search">
+                        <p>Search...</p>
+                    </label>
+                    <button type="submit">search</button>
+                </form>
+            </div>
+            <div class="row main-menu__items">
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item1.png" alt="">
+                        <a href="#" class="title">Dogs</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Puppy Care</a></li>
+                            <li><a href="#">Dog Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Dog Breeds</a></li>
+                            <li><a href="#">Dog Training</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item2.png" alt="">
+                        <a href="#" class="title">Cats</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Kitten Care</a></li>
+                            <li><a href="#">Cat Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Cat Breeds</a></li>
+                            <li><a href="#">Cat Diet & Nutrition</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item3.png" alt="">
+                        <a href="#" class="title">Birds</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Birds Care</a></li>
+                            <li><a href="#">Bird Breeds</a></li>
+                            <li><a href="#">Health & Wellnes</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Supplies & Toys</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item4.png" alt="">
+                        <a href="#" class="title">Small Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Hamsters</a></li>
+                            <li><a href="#">Rabbits</a></li>
+                            <li><a href="#">Guinea Pigs</a></li>
+                            <li><a href="#">Ferrets</a></li>
+                            <li><a href="#">Pet Rats & Gerbils</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <span class="dots"></span>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item5.png" alt="">
+                        <a href="#" class="title">Aquariums</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Freshwater Fish</a></li>
+                            <li><a href="#">Saltwater Fish</a></li>
+                            <li><a href="#">Fish Breeds (Freshwater & Saltwater)</a></li>
+                            <li><a href="#">Fish Owners Tips</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item6.png" alt="">
+                        <a href="#" class="title">Reptiles</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Tortoises & Aquatic Turtles</a></li>
+                            <li><a href="#">Snakes</a></li>
+                            <li><a href="#">Geckos</a></li>
+                            <li><a href="#">Bearded Dragons</a></li>
+                            <li><a href="#">Frogs & Toads</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item7.png" alt="">
+                        <a href="#" class="title">Exotic Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Muntjac Deer</a></li>
+                            <li><a href="#">Possum</a></li>
+                            <li><a href="#">Raccoons</a></li>
+                            <li><a href="#">Hourse & Ponies</a></li>
+                            <li><a href="#">Other Pets (pigs, Burros, Llamas)</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item8.png" alt="">
+                        <a href="#" class="title">Best Pet Products</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Cat Product s & Toys</a></li>
+                            <li><a href="#">Dog Products & Toys</a></li>
+                            <li><a href="#">Fish and Aquarium</a></li>
+                            <li><a href="#">Small Pet Products</a></li>
+                            <li><a href="#">Reptile Products</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-info align-items-center">
+                <div class="col-12 col-lg-9">
+                    <ul class="about">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Editorial Guidelines</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="follow">
+                        <p class="title">Follow Us:</p>
+                        <ul>
+                            <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-p.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="search_link">
+            <span>Search</span>
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</header>
+
+<main class="content">
+
+    <section class="main-screen">
+        <div class="main-info">
+            <div class="container">
+                <h1>Most biggest <span>pet parents community.</span><br>
+                    All about pets health and care</h1>
+                <p class="title">Select your pet?</p>
+                <ul class="pets_list">
+                    <li class="pets_list_item"><a href="#"><img src="img/list-dog.svg" alt=""><span>dog<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-cat.svg" alt=""><span>cat<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-bird.svg" alt=""><span>bird<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-small.svg" alt=""><span>small pets<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-aqua.svg" alt=""><span>aquarium<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-reptiles.svg" alt=""><span>reptiles<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                </ul>
+                <a href="#" class="btn btn-purple"><i class="fas fa-paw"></i>What to buy</a>
+            </div>
+        </div>
+        <div class="tools">
+            <div class="container">
+                <h2>Popular Pet <span>Tools</span></h2>
+                <div class="tools__row d-flex">
+                    <div class="tools__items d-flex">
+                        <a href="#" class="item">
+                            <div class="item_inner">
+                                <img src="img/tools-food.svg" alt="">
+                                <p>Pet Food Finder</p>
+                                <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="item_inner">
+                                <img src="img/tools-medicine.svg" alt="">
+                                <p>Vet Clinics Locator</p>
+                                <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="item_inner">
+                                <img src="img/tools-life.svg" alt="">
+                                <p>Pet Insurance Quotes</p>
+                                <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="item_inner">
+                                <img src="img/tools-heart.svg" alt="">
+                                <p>Ask a Vet Question</p>
+                                <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="can_eat d-flex">
+                        <form action="">
+                            <div class="form_title d-flex">
+                                <p>Can</p>
+                                <span>cat</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span></span>
+                                </label>
+                                <span>dog</span>
+                                <p>eat...</p>
+                            </div>
+                            <div class="form_group d-flex">
+                                <select class="js-select2" name="" id="" data-smart-positioning="false">
+                                    <option value="">Chupa Chups</option>
+                                    <option value="">Chupa Chups</option>
+                                    <option value="">Fish</option>
+                                </select>
+                                <button type="submit"><i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets latest-articles">
+        <div class="container">
+            <h2>Latest <span>Articles</span></h2>
+            <div class="mobile-slick">
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item3.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item3.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item3.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item3.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription">
+    <div class="container d-flex">
+        <div class="subscription-image">
+            <img src="img/email.svg" alt="">
+        </div>
+        <div class="subscription-block">
+            <form action="">
+                <h2>I want <span>to subscribe to the news</span> for my</h2>
+                <div class="btn_pets d-flex">
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio1.png" alt="">
+                        <span class="pets_title">Dog</span>
+                        <span class="check"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio2.png" alt="">
+                        <span class="pets_title">Cat</span>
+                        <span class="check"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio3.png" alt="">
+                        <span class="pets_title">Bird</span>
+                        <span class="check"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio4.png" alt="">
+                        <span class="pets_title">Small Pets</span>
+                        <span class="check"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio5.png" alt="">
+                        <span class="pets_title">Aquarium</span>
+                        <span class="check"></span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <img src="img/pets-radio6.png" alt="">
+                        <span class="pets_title">Reptiles</span>
+                        <span class="check"></span>
+                    </label>
+                </div>
+                <h2>on email</h2>
+                <div class="form-group">
+                    <label class="input-wrapper">
+                        <input type="text">
+                        <p>Your email</p>
+                    </label>
+                    <button type="submit"><i class="fab fa-telegram-plane"></i>subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section class="pets">
+        <div class="container">
+            <h2>Experts <span>Say</span></h2>
+            <p class="subtitle">Specialist with a higher (veterinarian) or specialized secondary <br>
+                (veterinarian paramedic) education dealing with the treatment of animals</p>
+            <div class="mobile-slick">
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+            </div>
+            <a href="#" class="btn">see all</a>
+        </div>
+    </section>
+
+    <section class="find-food">
+        <div class="container">
+            <h2>Find <span>healthy food </span>for my</h2>
+            <div class="choice d-flex">
+                <div class="pets_list_item">
+                    <a href="#"><img src="img/list-dog.svg" alt=""><span>dog<i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+                <p class="title">or</p>
+                <div class="pets_list_item">
+                    <a href="#"><img src="img/list-cat.svg" alt=""><span>cat<i class="fas fa-long-arrow-alt-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets">
+        <div class="container">
+            <h2>Dogs</h2>
+            <div class="pets__items">
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+            </div>
+            <a href="#" class="btn">see all</a>
+        </div>
+    </section>
+
+    <section class="veterinary">
+        <div class="container">
+            <div class="veterinary__row d-flex">
+                <div class="zip-code">
+                    <h2>Find <span>a veterinary clinic</span></h2>
+                    <p class="enter-zip">Please enter a ZIP code</p>
+                    <form class="form-group">
+                        <label class="input-wrapper">
+                            <input type="text">
+                            <p>Your ZIP</p>
+                        </label>
+                        <button type="submit">Find</button>
+                        <span class="form-group__icon"><i class="fas fa-map-marker-alt"></i></span>
+                    </form>
+                </div>
+                <div class="img">
+                    <img src="img/veterinary-house.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets">
+        <div class="container">
+            <h2>Cats</h2>
+            <div class="pets__items">
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+            </div>
+            <a href="#" class="btn">see all</a>
+        </div>
+    </section>
+
+    <section class="experts">
+    <div class="container">
+        <h2>Our <span>Experts</span></h2>
+        <div class="experts__items">
+            <div class="item">
+                <a href="#">
+                    <div class="img">
+                        <img src="img/experts-photo1.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Julie Doe</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo2.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Jack Smith</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo3.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Julie Doe</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo4.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Jack Smith</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img">
+                        <img src="img/experts-photo1.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Julie Doe</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo2.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Jack Smith</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo3.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Julie Doe</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="img"><img src="img/experts-photo4.jpg" alt="">
+                        <p class="mask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet
+                            pellentesque dolor. Phasellus tempor sapien vel diam scelerisque imperdiet. Nam non
+                            hendrerit augue. Aliquam eu urna nibh. Etiam massa metus, imperdiet ut orci nec,
+                            sollicitudin vulputate ex. In in varius ipsum quis interdum metus</p>
+                    </div>
+                    <div class="name">
+                        <p class="title">Jack Smith</p>
+                        <span>vegeterian</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="other-pets">
+        <div class="container">
+            <h2>Other <span>Pets</span></h2>
+            <div class="other-pets__items d-flex">
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item1.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+                <div class="pets_card">
+                    <a href="#">
+                        <img class="item_img" src="img/item2.jpg" alt="">
+                        <p class="title">Teacup Dogs for Tiny-Canine lovers</p>
+                        <div class="info_row">
+                            <img src="img/author.jpg" alt="">
+                            <p>Jhon Smith</p>
+                            <ul>
+                                <li><i class="fas fa-eye"></i>250</li>
+                                <li><i class="fas fa-comment"></i>233</li>
+                                <li><i class="fas fa-heart"></i>0</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <span class="label">Living with dogs</span>
+                </div>
+            </div>
+            <a href="#" class="btn">see all</a>
+            <div class="providers d-flex">
+                <div class="provider-img"><img src="img/provider1.png" alt=""></div>
+                <div class="provider-img"><img src="img/provider2.png" alt=""></div>
+                <div class="provider-img"><img src="img/provider3.png" alt=""></div>
+                <div class="provider-img"><img src="img/provider4.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="animal-breeds">
+        <div class="container">
+            <h2>Animal <span>Breeds</span></h2>
+            <div class=" row animal-breeds__items">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-dog.svg" alt="">
+                            <a href="#" class="title">Dogs</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-cat.svg" alt="">
+                            <a href="#" class="title">Cats</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-aqua.svg" alt="">
+                            <a href="#" class="title">Aquarium</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-bird.svg" alt="">
+                            <a href="#" class="title">Birds</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-small.svg" alt="">
+                            <a href="#" class="title">Small Pets</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="item d-flex">
+                        <div class="img-block">
+                            <img src="img/breeds-reptiles.svg" alt="">
+                            <a href="#" class="title">Reptiles</a>
+                        </div>
+                        <ul class="paws_list">
+                            <li><a href="#">Labrador</a></li>
+                            <li><a href="#">Retriever</a></li>
+                            <li><a href="#">German Shepherd Dog</a></li>
+                            <li><a href="#">Golden Retriever</a></li>
+                            <li><a href="#">French Bulldog</a></li>
+                            <li><a href="#">Bulldog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#main_logo" class="to_top"></a>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer_row d-flex">
+            <div class="column">
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <img class="email_img" src="img/email.svg" alt="">
+                <p class="title">Subscribe:</p>
+                <form action="" class="subscribe">
+                    <select class="js-select" data-smart-positioning="false">
+                        <option value="">dog</option>
+                        <option value="">cat</option>
+                    </select>
+                    <label class="input-wrapper">
+                        <input type="text">
+                        <p>Your Email</p>
+                    </label>
+                    <button type="submit" class="btn">subscribe</button>
+                </form>
+            </div>
+            <div class="column">
+                <ul class="pets_list">
+                    <li class="pets_list_item"><a href="#"><img src="img/list-dog.svg" alt=""><span>dog<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-cat.svg" alt=""><span>cat<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-bird.svg" alt=""><span>bird<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-small.svg" alt=""><span>small pets<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-aqua.svg" alt=""><span>aquarium<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-reptiles.svg" alt=""><span>reptiles<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                </ul>
+                <a href="#" class="btn btn-purple"><i class="fas fa-paw"></i>What to buy</a>
+            </div>
+            <div class="column">
+                <p class="title">Menu</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Perivacy Policy</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">California Privacy Notice</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="title">Contacts</p>
+                <a href="#" class="address"><i class="fas fa-map-marker-alt"></i>USA, Redwood City <br> 541 Jefferson
+                    Ave, Ste 100</a>
+                <a href="#" class="mail"><i class="fas fa-envelope"></i>info@thepets.net</a>
+                <div class="follow">
+                    <p class="title">Follow Us:</p>
+                    <ul>
+                        <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                    </ul>
+                    <img src="img/trust.png" alt="">
+                </div>
+            </div>
+            <p class="rights">© 2020 ThePets. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+<script src="libs/popper/popper.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/range-slider/ion.rangeSlider.min.js"></script>
+<script src="js/main_script.js"></script>
+
+
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="answer-email">
+            <div class="answer-email__inner d-flex">
+                <img src="img/answer-email.png" alt="">
+                <h2>Success!</h2>
+                <p>Expect an answer to your email</p>
+                <a href="#" class="btn btn-purple">back to home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var css =
+            '<style>\n\
+              .markup-nav { cursor: pointer; position: fixed; z-index: 5000; top: 60px; left: -176px; width: 170px; font:bold 12px/1.2 Helvetica, Arial; box-shadow: 0 0 4px rgba(0, 0, 0, .6); transition: left 200ms ease; box-sizing: border-box; }\n\
+              .markup-nav__inner { background:#fff; border-radius: 0 0 5px 0; padding: 5px 10px 5px 0; position: relative; }\n\
+              .markup-nav:before { content: ""; position: absolute; left: 100%; top: 0; width: 35px; height: 40px; border-radius: 0 5px 5px 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAwFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiCivsAAAAP3RSTlMAAAIEEBEVFiYsLS4vMzg5Ojs8PT5BR0tUXV5gaG5vcHd4fby9v8DBwsTFycvMzc/g4+Tl5uvs7vP09fb5+v5kF+L8AAAAsklEQVR42m3QaReBQBTG8aks2VNIthARQostmvv9v5U7V5164f/qOb9zZuYUyzLi2KAhSTl5AF5B/cuhOYkAgpHqnTWiEwAH6gPgE+2h1JaozQtJVSIb59uu1lcpjjHSwH3gshi2xBG6QxYCliiCaiAKfvSUBVWIQqY54qApaIYj3mi41rhupqxYCY4pvdgD0UsA8AaRC6V2RD7k8fyDNN/tzO9436LlHLv/f06WHl31jL67eSl1BXfldgAAAABJRU5ErkJggg==) no-repeat 62% 50% white; box-shadow: 0 0 4px rgba(0, 0, 0, .6); }\n\
+              .markup-nav a { display: block; padding: 2px 10px; color: #000; /*text-shadow: 1px 1px 0 #283E68;*/text-decoration: none !important; border: none !important; }\n\
+              .markup-nav a:hover { background: #edf1f5; color: #000 !important; }\n\
+              .markup-nav.is-open { left: 0; }\n\
+            </style>';
+
+        var html =
+            '<div class="markup-nav">\n\
+              <div class="markup-nav__inner">\n\
+                <a href="index.html">index.html</a>\n\
+                <a href="article.html">article.html</a>\n\
+                <a href="category.html">category.html</a>\n\
+                <a href="expert.html">expert.html</a>\n\
+                <a href="contact.html">contact.html</a>\n\
+                <a href="experts-list.html">experts-list.html</a>\n\
+                <a href="clinics-finder.html">clinics-finder.html</a>\n\
+                <a href="question.html">question.html</a>\n\
+                <a href="food-finder.html">food-finder.html</a>\n\
+                <a href="can-eat.html">can-eat.html</a>\n\
+                <a href="breed-finder.html">breed-finder.html</a>\n\
+              </div>\n\
+            </div>';
+
+        $('body').prepend(css + html);
+
+        $('.markup-nav').on('click', function () {
+            $(this).toggleClass('is-open');
+        });
+
+    });
+</script>
+</body>
+
+

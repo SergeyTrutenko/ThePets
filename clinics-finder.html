@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThePets</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
+    <link rel="stylesheet" href="libs/range-slider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+    <div class="container d-flex">
+        <a href="#" class="menu_link d-flex">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <span>Menu</span>
+        </a>
+        <a id="main_logo" href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="main-menu">
+            <div class="search-block">
+                <form class="form-group">
+                    <label class="input-wrapper">
+                        <input type="search">
+                        <p>Search...</p>
+                    </label>
+                    <button type="submit">search</button>
+                </form>
+            </div>
+            <div class="row main-menu__items">
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item1.png" alt="">
+                        <a href="#" class="title">Dogs</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Puppy Care</a></li>
+                            <li><a href="#">Dog Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Dog Breeds</a></li>
+                            <li><a href="#">Dog Training</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item2.png" alt="">
+                        <a href="#" class="title">Cats</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Kitten Care</a></li>
+                            <li><a href="#">Cat Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Cat Breeds</a></li>
+                            <li><a href="#">Cat Diet & Nutrition</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item3.png" alt="">
+                        <a href="#" class="title">Birds</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Birds Care</a></li>
+                            <li><a href="#">Bird Breeds</a></li>
+                            <li><a href="#">Health & Wellnes</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Supplies & Toys</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item4.png" alt="">
+                        <a href="#" class="title">Small Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Hamsters</a></li>
+                            <li><a href="#">Rabbits</a></li>
+                            <li><a href="#">Guinea Pigs</a></li>
+                            <li><a href="#">Ferrets</a></li>
+                            <li><a href="#">Pet Rats & Gerbils</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <span class="dots"></span>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item5.png" alt="">
+                        <a href="#" class="title">Aquariums</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Freshwater Fish</a></li>
+                            <li><a href="#">Saltwater Fish</a></li>
+                            <li><a href="#">Fish Breeds (Freshwater & Saltwater)</a></li>
+                            <li><a href="#">Fish Owners Tips</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item6.png" alt="">
+                        <a href="#" class="title">Reptiles</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Tortoises & Aquatic Turtles</a></li>
+                            <li><a href="#">Snakes</a></li>
+                            <li><a href="#">Geckos</a></li>
+                            <li><a href="#">Bearded Dragons</a></li>
+                            <li><a href="#">Frogs & Toads</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item7.png" alt="">
+                        <a href="#" class="title">Exotic Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Muntjac Deer</a></li>
+                            <li><a href="#">Possum</a></li>
+                            <li><a href="#">Raccoons</a></li>
+                            <li><a href="#">Hourse & Ponies</a></li>
+                            <li><a href="#">Other Pets (pigs, Burros, Llamas)</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item8.png" alt="">
+                        <a href="#" class="title">Best Pet Products</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Cat Product s & Toys</a></li>
+                            <li><a href="#">Dog Products & Toys</a></li>
+                            <li><a href="#">Fish and Aquarium</a></li>
+                            <li><a href="#">Small Pet Products</a></li>
+                            <li><a href="#">Reptile Products</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-info align-items-center">
+                <div class="col-12 col-lg-9">
+                    <ul class="about">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Editorial Guidelines</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="follow">
+                        <p class="title">Follow Us:</p>
+                        <ul>
+                            <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-p.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="search_link">
+            <span>Search</span>
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</header>
+
+<main class="content inner-content clinics-finder-content">
+
+    <section class="page-title-section">
+        <div class="container">
+            <div class="page-title d-flex">
+                <img src="img/veterinary-house.png" alt="">
+                <h1>Vet Clinics Finder</h1>
+                <p class="enter-zip">Please enter a ZIP code</p>
+                <form class="form-group">
+                    <label class="input-wrapper">
+                        <input type="text">
+                        <p>Your ZIP</p>
+                    </label>
+                    <button type="submit">Find</button>
+                    <span class="form-group__icon"><i class="fas fa-map-marker-alt"></i></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-section">
+        <div class="container">
+            <div class="advantages">
+                <div class="advantages__inner">
+                    <ul class="advantages__items d-flex">
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-3.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Full base of vet clinics</p>
+                                <p>
+                                    As every cat owner knows, adopting a new furry friend is a special
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-4.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Regular updates</p>
+                                <p>
+                                    As every cat owner knows, adopting a new furry friend is a special
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-map">
+
+        <div class="results">
+            <div class="heading d-flex">
+                <h3>Results:</h3>
+                <a href="#" class="btn btn-purple">add vet clinic</a>
+            </div>
+            <div class="results__items">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/results-item-1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h4>Skipworth Veterinary Clinic</h4>
+                        <div class="rating">
+                            <img src="img/rating-ico.png" alt="">
+                            <ul>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                            </ul>
+                            <span>(16)</span>
+                        </div>
+                        <div class="contact-details">
+                            <p><i><img src="img/contact-details-pin.png" alt=""></i>1423 Main Street Middletown 40243 </p>
+                            <a href="#"><i><img src="img/contact-details-tel.png" alt=""></i>(546) 546-36-54 </a>
+                        </div>
+                        <div class="open_btn">
+                            <p>Now open</p>
+                        </div>
+                        <div class="calendar-slider">
+                            <div class="item">
+                                <div class="month"><span>Feb 24 - 29, 2020</span></div>
+                                <div class="days">
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day output">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="month"><span>Feb 24 - 29, 2020</span></div>
+                                <div class="days">
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day output">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="month"><span>Feb 24 - 29, 2020</span></div>
+                                <div class="days">
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day output">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="status"></span>
+                                        <p>Mon</p>
+                                        <p class="number">24</p>
+                                        <span class="time_from">07:30 am</span>
+                                        <span class="time_to">17:00 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="bug">If you found a bug in the description, <a href="#">click here</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/results-item-2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h4>Cole Veterinary Hospital</h4>
+                        <div class="rating">
+                            <img src="img/rating-ico.png" alt="">
+                            <ul>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-full.png" alt=""></li>
+                                <li><img src="img/rating-half.png" alt=""></li>
+                                <li><img src="img/rating-empty.png" alt=""></li>
+                            </ul>
+                            <span>(16)</span>
+                        </div>
+                        <div class="contact-details">
+                            <p><i><img src="img/contact-details-pin.png" alt=""></i>1423 Main Street Middletown 40243 </p>
+                            <a href="#"><i><img src="img/contact-details-tel.png" alt=""></i>(546) 546-36-54 </a>
+                        </div>
+                        <p class="bug">If you found a bug in the description, <a href="#">click here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="btn-white btn_map"><i class="fas fa-map-marker-alt"></i>map</div>
+        <div class="btn-white btn_results"><img src="img/btn-results-ico.png" alt="">results</div>
+
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="layout d-flex">
+                <div class="description-block">
+                    <h2>About this <span>service</span></h2>
+                    <p>
+                        As every cat owner knows, adopting a new furry friend is a special and unforgettable experience. Though accidents, rough introductions with As every cat owner knows, adopting
+                        a new furry friend is a special and unforgettable experience.
+                    </p>
+                    <p>
+                        Though accidents, rough introductions with As every cat owner knows, adopting a new furry friend is a special and unforgettable experience. Though accidents, rough
+                        introductions with
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/map.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tools">
+        <div class="container">
+            <h2>Other <span>Tools</span></h2>
+            <div class="tools__row d-flex">
+                <div class="tools__items d-flex">
+                    <div class="item item-hidden">
+                        <h2>Other <span>Tools</span></h2>
+                    </div>
+                    <a href="#" class="item">
+                        <div class="item_inner">
+                            <img src="img/tools-food.svg" alt="">
+                            <p>Pet Food Finder</p>
+                            <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item_inner">
+                            <img src="img/tools-medicine.svg" alt="">
+                            <p>Vet Clinics Locator</p>
+                            <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="item_inner">
+                            <img src="img/tools-life.svg" alt="">
+                            <p>Pet Insurance Quotes</p>
+                            <span class="more">try now<i class="fas fa-caret-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="can_eat d-flex">
+                    <form action="">
+                        <div class="form_title d-flex">
+                            <p>Can</p>
+                            <span>cat</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                            <span>dog</span>
+                            <p>eat...</p>
+                        </div>
+                        <div class="form_group d-flex">
+                            <select class="js-select2" name="" id="" data-smart-positioning="false">
+                                <option value="">Chupa Chups</option>
+                                <option value="">Chupa Chups</option>
+                                <option value="">Fish</option>
+                            </select>
+                            <button type="submit"><i class="fas fa-caret-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#main_logo" class="to_top"></a>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer_row d-flex">
+            <div class="column">
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <img class="email_img" src="img/email.svg" alt="">
+                <p class="title">Subscribe:</p>
+                <form action="" class="subscribe">
+                    <select class="js-select" data-smart-positioning="false">
+                        <option value="">dog</option>
+                        <option value="">cat</option>
+                    </select>
+                    <label class="input-wrapper">
+                        <input type="text">
+                        <p>Your Email</p>
+                    </label>
+                    <button type="submit" class="btn">subscribe</button>
+                </form>
+            </div>
+            <div class="column">
+                <ul class="pets_list">
+                    <li class="pets_list_item"><a href="#"><img src="img/list-dog.svg" alt=""><span>dog<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-cat.svg" alt=""><span>cat<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-bird.svg" alt=""><span>bird<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-small.svg" alt=""><span>small pets<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-aqua.svg" alt=""><span>aquarium<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-reptiles.svg" alt=""><span>reptiles<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                </ul>
+                <a href="#" class="btn btn-purple"><i class="fas fa-paw"></i>What to buy</a>
+            </div>
+            <div class="column">
+                <p class="title">Menu</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Perivacy Policy</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">California Privacy Notice</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="title">Contacts</p>
+                <a href="#" class="address"><i class="fas fa-map-marker-alt"></i>USA, Redwood City <br> 541 Jefferson
+                    Ave, Ste 100</a>
+                <a href="#" class="mail"><i class="fas fa-envelope"></i>info@thepets.net</a>
+                <div class="follow">
+                    <p class="title">Follow Us:</p>
+                    <ul>
+                        <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                    </ul>
+                    <img src="img/trust.png" alt="">
+                </div>
+            </div>
+            <p class="rights">© 2020 ThePets. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+<script src="libs/popper/popper.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/range-slider/ion.rangeSlider.min.js"></script>
+<script src="js/main_script.js"></script>
+
+
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="answer-email">
+            <div class="answer-email__inner d-flex">
+                <img src="img/answer-email.png" alt="">
+                <h2>Success!</h2>
+                <p>Expect an answer to your email</p>
+                <a href="#" class="btn btn-purple">back to home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var css =
+            '<style>\n\
+              .markup-nav { cursor: pointer; position: fixed; z-index: 5000; top: 60px; left: -176px; width: 170px; font:bold 12px/1.2 Helvetica, Arial; box-shadow: 0 0 4px rgba(0, 0, 0, .6); transition: left 200ms ease; box-sizing: border-box; }\n\
+              .markup-nav__inner { background:#fff; border-radius: 0 0 5px 0; padding: 5px 10px 5px 0; position: relative; }\n\
+              .markup-nav:before { content: ""; position: absolute; left: 100%; top: 0; width: 35px; height: 40px; border-radius: 0 5px 5px 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAwFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiCivsAAAAP3RSTlMAAAIEEBEVFiYsLS4vMzg5Ojs8PT5BR0tUXV5gaG5vcHd4fby9v8DBwsTFycvMzc/g4+Tl5uvs7vP09fb5+v5kF+L8AAAAsklEQVR42m3QaReBQBTG8aks2VNIthARQostmvv9v5U7V5164f/qOb9zZuYUyzLi2KAhSTl5AF5B/cuhOYkAgpHqnTWiEwAH6gPgE+2h1JaozQtJVSIb59uu1lcpjjHSwH3gshi2xBG6QxYCliiCaiAKfvSUBVWIQqY54qApaIYj3mi41rhupqxYCY4pvdgD0UsA8AaRC6V2RD7k8fyDNN/tzO9436LlHLv/f06WHl31jL67eSl1BXfldgAAAABJRU5ErkJggg==) no-repeat 62% 50% white; box-shadow: 0 0 4px rgba(0, 0, 0, .6); }\n\
+              .markup-nav a { display: block; padding: 2px 10px; color: #000; /*text-shadow: 1px 1px 0 #283E68;*/text-decoration: none !important; border: none !important; }\n\
+              .markup-nav a:hover { background: #edf1f5; color: #000 !important; }\n\
+              .markup-nav.is-open { left: 0; }\n\
+            </style>';
+
+        var html =
+            '<div class="markup-nav">\n\
+              <div class="markup-nav__inner">\n\
+                <a href="index.html">index.html</a>\n\
+                <a href="article.html">article.html</a>\n\
+                <a href="category.html">category.html</a>\n\
+                <a href="expert.html">expert.html</a>\n\
+                <a href="contact.html">contact.html</a>\n\
+                <a href="experts-list.html">experts-list.html</a>\n\
+                <a href="clinics-finder.html">clinics-finder.html</a>\n\
+                <a href="question.html">question.html</a>\n\
+                <a href="food-finder.html">food-finder.html</a>\n\
+                <a href="can-eat.html">can-eat.html</a>\n\
+                <a href="breed-finder.html">breed-finder.html</a>\n\
+              </div>\n\
+            </div>';
+
+        $('body').prepend(css + html);
+
+        $('.markup-nav').on('click', function () {
+            $(this).toggleClass('is-open');
+        });
+
+    });
+</script>
+</body>
+
+<script>
+    if ($('#map').length > 0) {
+        function initMap() {
+            var allakulMap = {lat: 60.250957, lng: 29.851523};
+            var markerIcon = {url: 'img/paw-pin.png'};
+            var popupContent =
+                '<div class="info-window">' +
+                '<div class="img"><img src="img/results-item-1.png" alt=""></div>' +
+                '<h5>Skipworth Veterinary Clinic</h5>' +
+                '<div class="rating">\n' +
+                '    <img src="img/rating-ico.png" alt="">\n' +
+                '    <ul>\n' +
+                '        <li><img src="img/rating-full.png" alt=""></li>\n' +
+                '        <li><img src="img/rating-full.png" alt=""></li>\n' +
+                '        <li><img src="img/rating-full.png" alt=""></li>\n' +
+                '        <li><img src="img/rating-full.png" alt=""></li>\n' +
+                '        <li><img src="img/rating-full.png" alt=""></li>\n' +
+                '    </ul>\n' +
+                '    <span>(16)</span>\n' +
+                '</div>\n' +
+                '<div class="contact-details">\n' +
+                '    <p><i><img src="img/contact-details-pin.png" alt=""></i>1423 Main Street Middletown 40243 </p>\n' +
+                '    <a href="#"><i><img src="img/contact-details-tel.png" alt=""></i>(546) 546-36-54 </a>\n' +
+                '    <a href="#"><i><img src="img/link.png" alt=""></i>skipdvm.com </a>\n' +
+                '    <p><i><img src="img/clock.png" alt=""></i>Now open </p>\n' +
+                '</div>' +
+                '</div>';
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: {lat: 60.250957, lng: 29.851523}, disableDefaultUI: true});
+            var marker = new google.maps.Marker({position: allakulMap, map: map, icon: markerIcon});
+            infowindow = new google.maps.InfoWindow({content: popupContent});
+            infowindow.open(map, marker);
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATjuXastJolnsTrH9urvBwWGQXvSx9d4Y&callback=initMap" type="text/javascript"></script>

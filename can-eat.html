@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThePets</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
+    <link rel="stylesheet" href="libs/range-slider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+    <div class="container d-flex">
+        <a href="#" class="menu_link d-flex">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <span>Menu</span>
+        </a>
+        <a id="main_logo" href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="main-menu">
+            <div class="search-block">
+                <form class="form-group">
+                    <label class="input-wrapper">
+                        <input type="search">
+                        <p>Search...</p>
+                    </label>
+                    <button type="submit">search</button>
+                </form>
+            </div>
+            <div class="row main-menu__items">
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item1.png" alt="">
+                        <a href="#" class="title">Dogs</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Puppy Care</a></li>
+                            <li><a href="#">Dog Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Dog Breeds</a></li>
+                            <li><a href="#">Dog Training</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item2.png" alt="">
+                        <a href="#" class="title">Cats</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Kitten Care</a></li>
+                            <li><a href="#">Cat Care</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Cat Breeds</a></li>
+                            <li><a href="#">Cat Diet & Nutrition</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item3.png" alt="">
+                        <a href="#" class="title">Birds</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Birds Care</a></li>
+                            <li><a href="#">Bird Breeds</a></li>
+                            <li><a href="#">Health & Wellnes</a></li>
+                            <li><a href="#">Veterinary Tips</a></li>
+                            <li><a href="#">Supplies & Toys</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item4.png" alt="">
+                        <a href="#" class="title">Small Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Hamsters</a></li>
+                            <li><a href="#">Rabbits</a></li>
+                            <li><a href="#">Guinea Pigs</a></li>
+                            <li><a href="#">Ferrets</a></li>
+                            <li><a href="#">Pet Rats & Gerbils</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <span class="dots"></span>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item5.png" alt="">
+                        <a href="#" class="title">Aquariums</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Freshwater Fish</a></li>
+                            <li><a href="#">Saltwater Fish</a></li>
+                            <li><a href="#">Fish Breeds (Freshwater & Saltwater)</a></li>
+                            <li><a href="#">Fish Owners Tips</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item6.png" alt="">
+                        <a href="#" class="title">Reptiles</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Tortoises & Aquatic Turtles</a></li>
+                            <li><a href="#">Snakes</a></li>
+                            <li><a href="#">Geckos</a></li>
+                            <li><a href="#">Bearded Dragons</a></li>
+                            <li><a href="#">Frogs & Toads</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item7.png" alt="">
+                        <a href="#" class="title">Exotic Pets</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Muntjac Deer</a></li>
+                            <li><a href="#">Possum</a></li>
+                            <li><a href="#">Raccoons</a></li>
+                            <li><a href="#">Hourse & Ponies</a></li>
+                            <li><a href="#">Other Pets (pigs, Burros, Llamas)</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="item d-flex">
+                        <img src="img/main-menu-item8.png" alt="">
+                        <a href="#" class="title">Best Pet Products</a>
+                        <ul class="paws_list">
+                            <li><a href="#">Cat Product s & Toys</a></li>
+                            <li><a href="#">Dog Products & Toys</a></li>
+                            <li><a href="#">Fish and Aquarium</a></li>
+                            <li><a href="#">Small Pet Products</a></li>
+                            <li><a href="#">Reptile Products</a></li>
+                        </ul>
+                        <a href="#" class="more">See All<i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-info align-items-center">
+                <div class="col-12 col-lg-9">
+                    <ul class="about">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Editorial Guidelines</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="follow">
+                        <p class="title">Follow Us:</p>
+                        <ul>
+                            <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/follow-p.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="search_link">
+            <span>Search</span>
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</header>
+
+<main class="content inner-content can-eat-content">
+
+    <section class="page-title-section">
+        <div class="container">
+            <div class="page-title d-flex">
+                <img src="img/tools-food.svg" alt="">
+                <h1>Can Pet Eat</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-section">
+        <div class="container">
+            <div class="advantages">
+                <div class="advantages__inner">
+                    <ul class="advantages__items d-flex">
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-1.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Выбор диеты</p>
+                                <p>
+                                    Возможность выбирать корма по нужной
+                                    диете
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-2.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Лучшая цена</p>
+                                <p>
+                                    Понимание где можно купить выбранные корма более дешевле
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-5.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Фильтр по ингредиентам</p>
+                                <p>
+                                    Возможность убрать (или выбрать) ингредиенты, которые не должны быть (или должны быть)
+                                    в составе корма
+                                </p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img">
+                                <img src="img/advantages-6.svg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="title">Отзывы пользователей</p>
+                                <p>
+                                    Сортировка кормов на основании миллионов оценок проверенных пользователей маркетплейсов и интернет-магазинов
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eat-list">
+        <div class="container">
+            <div class="layout">
+                <div class="switch_with-icon">
+                    <h2>Can</h2>
+                    <div class="icon">
+                        <img src="img/list-dog.svg" alt="">
+                        <span>dog</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span></span>
+                    </label>
+                    <div class="icon">
+                        <img src="img/list-cat.svg" alt="">
+                        <span>cat</span>
+                    </div>
+                    <h2>eat:</h2>
+                </div>
+                <div class="eat-list__items">
+                    <div class="items__wrap">
+                        <div class="item a_block" id="a_block">
+                            <span class="letter">a</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item b_block" id="b_block">
+                            <span class="letter">b</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item c_block" id="c_block">
+                            <span class="letter">c</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item d_block" id="d_block">
+                            <span class="letter">d</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item e_block" id="e_block">
+                            <span class="letter">e</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item f_block" id="f_block">
+                            <span class="letter">f</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item g_block" id="g_block">
+                            <span class="letter">g</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item h_block" id="h_block">
+                            <span class="letter">h</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item i_block" id="i_block">
+                            <span class="letter">i</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                            </ul>
+                        </div>
+                        <div class="item j_block" id="j_block">
+                            <span class="letter">j</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item k_block" id="k_block">
+                            <span class="letter">k</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item l_block" id="l_block">
+                            <span class="letter">l</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                            </ul>
+                        </div>
+                        <div class="item m_block" id="m_block">
+                            <span class="letter">m</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                            </ul>
+                        </div>
+                        <div class="item n_block" id="n_block">
+                            <span class="letter">n</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                            </ul>
+                        </div>
+                        <div class="item o_block" id="o_block">
+                            <span class="letter">o</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item p_block" id="p_block">
+                            <span class="letter">p</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item q_block" id="q_block">
+                            <span class="letter">q</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                            </ul>
+                        </div>
+                        <div class="item r_block" id="r_block">
+                            <span class="letter">r</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                            </ul>
+                        </div>
+                        <div class="item s_block" id="s_block">
+                            <span class="letter">s</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                            </ul>
+                        </div>
+                        <div class="item t_block" id="t_block">
+                            <span class="letter">t</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                            </ul>
+                        </div>
+                        <div class="item u_block" id="u_block">
+                            <span class="letter">u</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item v_block" id="v_block">
+                            <span class="letter">v</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                                <li><a href="#">Borgomi</a></li>
+                            </ul>
+                        </div>
+                        <div class="item w_block" id="w_block">
+                            <span class="letter">w</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                                <li><a href="#">Azbuka</a></li>
+                                <li><a href="#">Autos</a></li>
+                                <li><a href="#">Archibalt</a></li>
+                            </ul>
+                        </div>
+                        <div class="item x_block" id="x_block">
+                            <span class="letter">x</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                            </ul>
+                        </div>
+                        <div class="item y_block" id="y_block">
+                            <span class="letter">y</span>
+                            <ul>
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">Avatar</a></li>
+                                <li><a href="#">Antarctida</a></li>
+                            </ul>
+                        </div>
+                        <div class="item z_block" id="z_block">
+                            <span class="letter">z</span>
+                            <ul>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Baraban</a></li>
+                                <li><a href="#">Bumerang</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="alphabet">
+                        <li><a href="#a_block" data-anchor=".a_block">a</a></li>
+                        <li><a href="#b_block" data-anchor=".b_block">b</a></li>
+                        <li><a href="#c_block" data-anchor=".c_block">c</a></li>
+                        <li><a href="#d_block" data-anchor=".d_block">d</a></li>
+                        <li><a href="#e_block" data-anchor=".e_block">e</a></li>
+                        <li><a href="#f_block" data-anchor=".f_block">f</a></li>
+                        <li><a href="#g_block" data-anchor=".g_block">g</a></li>
+                        <li><a href="#h_block" data-anchor=".h_block">h</a></li>
+                        <li><a href="#i_block" data-anchor=".i_block">i</a></li>
+                        <li><a href="#j_block" data-anchor=".j_block">j</a></li>
+                        <li><a href="#k_block" data-anchor=".k_block">k</a></li>
+                        <li><a href="#l_block" data-anchor=".l_block">l</a></li>
+                        <li><a href="#m_block" data-anchor=".m_block">m</a></li>
+                        <li><a href="#n_block" data-anchor=".n_block">n</a></li>
+                        <li><a href="#o_block" data-anchor=".o_block">o</a></li>
+                        <li><a href="#p_block" data-anchor=".p_block">p</a></li>
+                        <li><a href="#q_block" data-anchor=".q_block">q</a></li>
+                        <li><a href="#r_block" data-anchor=".r_block">r</a></li>
+                        <li><a href="#s_block" data-anchor=".s_block">s</a></li>
+                        <li><a href="#t_block" data-anchor=".t_block">t</a></li>
+                        <li><a href="#u_block" data-anchor=".u_block">u</a></li>
+                        <li><a href="#v_block" data-anchor=".v_block">v</a></li>
+                        <li><a href="#w_block" data-anchor=".w_block">w</a></li>
+                        <li><a href="#x_block" data-anchor=".x_block">x</a></li>
+                        <li><a href="#y_block" data-anchor=".y_block">y</a></li>
+                        <li><a href="#z_block" data-anchor=".z_block">z</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <div class="container">
+            <div class="layout d-flex">
+                <div class="description-block">
+                    <h2>About this <span>service</span></h2>
+                    <p>
+                        As every cat owner knows, adopting a new furry friend is a special and unforgettable experience. Though accidents, rough introductions with As every cat owner knows, adopting
+                        a new furry friend is a special and unforgettable experience.
+                    </p>
+                    <p>
+                        Though accidents, rough introductions with As every cat owner knows, adopting a new furry friend is a special and unforgettable experience. Though accidents, rough
+                        introductions with
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/pet-food.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#main_logo" class="to_top"></a>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer_row d-flex">
+            <div class="column">
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <img class="email_img" src="img/email.svg" alt="">
+                <p class="title">Subscribe:</p>
+                <form action="" class="subscribe">
+                    <select class="js-select" data-smart-positioning="false">
+                        <option value="">dog</option>
+                        <option value="">cat</option>
+                    </select>
+                    <label class="input-wrapper">
+                        <input type="text">
+                        <p>Your Email</p>
+                    </label>
+                    <button type="submit" class="btn">subscribe</button>
+                </form>
+            </div>
+            <div class="column">
+                <ul class="pets_list">
+                    <li class="pets_list_item"><a href="#"><img src="img/list-dog.svg" alt=""><span>dog<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-cat.svg" alt=""><span>cat<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-bird.svg" alt=""><span>bird<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-small.svg" alt=""><span>small pets<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-aqua.svg" alt=""><span>aquarium<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                    <li class="pets_list_item"><a href="#"><img src="img/list-reptiles.svg" alt=""><span>reptiles<i
+                                        class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                </ul>
+                <a href="#" class="btn btn-purple"><i class="fas fa-paw"></i>What to buy</a>
+            </div>
+            <div class="column">
+                <p class="title">Menu</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Perivacy Policy</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">California Privacy Notice</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="title">Contacts</p>
+                <a href="#" class="address"><i class="fas fa-map-marker-alt"></i>USA, Redwood City <br> 541 Jefferson
+                    Ave, Ste 100</a>
+                <a href="#" class="mail"><i class="fas fa-envelope"></i>info@thepets.net</a>
+                <div class="follow">
+                    <p class="title">Follow Us:</p>
+                    <ul>
+                        <li><a href="#"><img src="img/follow-inst.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/follow-facebook.png" alt=""></a></li>
+                    </ul>
+                    <img src="img/trust.png" alt="">
+                </div>
+            </div>
+            <p class="rights">© 2020 ThePets. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+<script src="libs/popper/popper.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/range-slider/ion.rangeSlider.min.js"></script>
+<script src="js/main_script.js"></script>
+
+
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="answer-email">
+            <div class="answer-email__inner d-flex">
+                <img src="img/answer-email.png" alt="">
+                <h2>Success!</h2>
+                <p>Expect an answer to your email</p>
+                <a href="#" class="btn btn-purple">back to home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var css =
+            '<style>\n\
+              .markup-nav { cursor: pointer; position: fixed; z-index: 5000; top: 60px; left: -176px; width: 170px; font:bold 12px/1.2 Helvetica, Arial; box-shadow: 0 0 4px rgba(0, 0, 0, .6); transition: left 200ms ease; box-sizing: border-box; }\n\
+              .markup-nav__inner { background:#fff; border-radius: 0 0 5px 0; padding: 5px 10px 5px 0; position: relative; }\n\
+              .markup-nav:before { content: ""; position: absolute; left: 100%; top: 0; width: 35px; height: 40px; border-radius: 0 5px 5px 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAwFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiCivsAAAAP3RSTlMAAAIEEBEVFiYsLS4vMzg5Ojs8PT5BR0tUXV5gaG5vcHd4fby9v8DBwsTFycvMzc/g4+Tl5uvs7vP09fb5+v5kF+L8AAAAsklEQVR42m3QaReBQBTG8aks2VNIthARQostmvv9v5U7V5164f/qOb9zZuYUyzLi2KAhSTl5AF5B/cuhOYkAgpHqnTWiEwAH6gPgE+2h1JaozQtJVSIb59uu1lcpjjHSwH3gshi2xBG6QxYCliiCaiAKfvSUBVWIQqY54qApaIYj3mi41rhupqxYCY4pvdgD0UsA8AaRC6V2RD7k8fyDNN/tzO9436LlHLv/f06WHl31jL67eSl1BXfldgAAAABJRU5ErkJggg==) no-repeat 62% 50% white; box-shadow: 0 0 4px rgba(0, 0, 0, .6); }\n\
+              .markup-nav a { display: block; padding: 2px 10px; color: #000; /*text-shadow: 1px 1px 0 #283E68;*/text-decoration: none !important; border: none !important; }\n\
+              .markup-nav a:hover { background: #edf1f5; color: #000 !important; }\n\
+              .markup-nav.is-open { left: 0; }\n\
+            </style>';
+
+        var html =
+            '<div class="markup-nav">\n\
+              <div class="markup-nav__inner">\n\
+                <a href="index.html">index.html</a>\n\
+                <a href="article.html">article.html</a>\n\
+                <a href="category.html">category.html</a>\n\
+                <a href="expert.html">expert.html</a>\n\
+                <a href="contact.html">contact.html</a>\n\
+                <a href="experts-list.html">experts-list.html</a>\n\
+                <a href="clinics-finder.html">clinics-finder.html</a>\n\
+                <a href="question.html">question.html</a>\n\
+                <a href="food-finder.html">food-finder.html</a>\n\
+                <a href="can-eat.html">can-eat.html</a>\n\
+                <a href="breed-finder.html">breed-finder.html</a>\n\
+              </div>\n\
+            </div>';
+
+        $('body').prepend(css + html);
+
+        $('.markup-nav').on('click', function () {
+            $(this).toggleClass('is-open');
+        });
+
+    });
+</script>
+</body>
